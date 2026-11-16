@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign-in complete</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.5; }
+  code { display: block; word-break: break-all; background: #f2f2f2; padding: .75rem; border-radius: .25rem; }
+</style>
+</head>
+<body>
+<h1>Tesla sign-in complete</h1>
+<p>Copy this whole address and pass it to <code style="display:inline;padding:0 .25rem">teslacontrol login-finish</code>:</p>
+<code id="url"></code>
+<p>The code inside it works once and expires within minutes.</p>
+<script>document.getElementById("url").textContent = location.href;</script>
+</body>
+</html>
